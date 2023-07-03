@@ -36,7 +36,7 @@ class Employee(db.Model):
 	def __repr__(self):
 		return f"<Employee {self.name} {self.state} {self.dept_code}>"
 	
-def phone_dir_nav():
+def get_directory():
 	"""Show phone directory"""
 
 	all_emps = Employee.query.all()
